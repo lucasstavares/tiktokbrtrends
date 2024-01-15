@@ -41,5 +41,5 @@ To build this figure i made this simple calculation (* 100 to get a porcentage):
 
 We have a wide range of content creators here, and you'll notice that almost none of the creaters with the most likes are represented. That's because it's hard for really big accounts to get a high enough ratio, simply because they're big. You wouldn't expect an account with 100 million followers to have an insane like-to-play ratio of 20%. A comparison between **Khaby Lame** and **Kylie Jenner** (or even **Won Jeong**) shows that celebrity content really does get people to engage with it. On the other hand, comedy content can get a lower percentage (relative to celebrity content) and still be above average. The unbeaten _cute animals_ category was included in all the figures presented. This time was no different, as the user with the highest like-to-play ratio is **dmitryhitr**, which only proves that _cute animals_ evoke that empathetic response from everyone, regardless of the language they speak. Now let's look at whether there is a correlation between the length of the video and the like-to-play rate.
 
-![graph for top users video length and like-to-play ratio](./graphs/videolength.png "Video Lenght and Like-to-Play") 
+
 
