@@ -32,10 +32,7 @@ Considering that the average number of likes is around 400,000, these are creato
 
 Looks like it's following the trend: Reactions, food, cute animals. It's worth noting that there are some outliers here. Look at **Kylie Jenner**, who has one of the highest number of likes but one of the lowest number of plays among the top creators. The same happens with **Won Jeong** (ox_zung),so it's safe to assume that celebrity content has higher engagement than most content types.
 
-<<<<<<< HEAD
 ### 1.2 What people engage in?
-=======
-### 1.2 What people engage and share?
 >>>>>>> f388741d22159b7c929dd13419498fcf5c5bffc0
 ![graph for top users like-to-play ratio](./graphs/liketoplay.png "Like-to-Plays")
 
