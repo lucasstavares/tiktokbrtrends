@@ -24,16 +24,16 @@ Muitos dos principais criadores de conteúdo não convertem bem em compartilhame
 
 Tangente: A mudança no conteúdo popular de 2021 para 2024 é impressionante. Parece que hoje em dia todo mundo já se deparou com vídeos de tela dividida do Subway Surfer e Minecraft Parkour. Agora, o foco não está apenas no que você está assistindo; ele se estende também ao que você está ouvindo. Isso indica uma inclinação crescente para experiências multissensoriais. O conteúdo padrão perdeu seu apelo e as pessoas estão buscando formas mais envolventes e imersivas de entretenimento que estimulem não apenas visualmente, mas também por meio de experiências de áudio envolventes (Reddit Narration, por exemplo).
 ### 1.1 O que as pessoas consomem?
-![gráfico dos usuários mais curtidos](./graphs/mostliked.png "Usuários mais curtidos")
+![gráfico dos usuários mais curtidos](./graphs/maiscurtidos.png "Usuários mais curtidos")
 
 Considerando que o número médio de curtidas é de cerca de 400.000, esses são criadores que estão muito acima da média. Podemos ver claramente que o número 1 é **Khaby Lame**, que é famoso por suas reações cômicas, e os outros 2 que vêm em seguida são, respectivamente, conteúdo relacionado a alimentos e _animais fofos_. No entanto, isso não é suficiente para tirar conclusões definitivas sobre o que realmente é tendência. Vamos dar uma olhada em alguns outros números.    
 
-![gráfico para usuários mais assistidos](./graphs/mostwatched.png "Usuários mais assistidos")
+![gráfico para usuários mais assistidos](./graphs/maisassistidos.png "Usuários mais assistidos")
 
 Está seguindo a tendência: Reações, comida, animais fofos. Vale a pena observar que há algumas exceções aqui. Veja **Kylie Jenner**, que tem um dos maiores números de curtidas, mas um dos menores números de reproduções entre os principais criadores. O mesmo acontece com **Won Jeong** (ox_zung), portanto, é seguro presumir que o conteúdo de celebridades tem mais engajamento do que a maioria dos outros tipos de conteúdo.
 
 ### 1.2 O que as pessoas engajam?
-![gráfico para a proporção de usuários que mais engajam](./graphs/liketoplay.png "Engajamento")
+![gráfico para a proporção de usuários que mais engajam](./graphs/engajamento.png "Engajamento")
 
 Para criar esse número, fiz este cálculo simples (* 100 para obter uma porcentagem):
 
@@ -41,15 +41,15 @@ Para criar esse número, fiz este cálculo simples (* 100 para obter uma porcent
 
 Temos uma grande variedade de criadores de conteúdo aqui, e você perceberá que quase nenhum dos criadores com mais curtidas está representado. Isso ocorre porque é difícil para contas realmente grandes obterem uma proporção alta o suficiente, simplesmente porque são grandes. Você não esperaria que uma conta com 100 milhões de seguidores tivesse uma taxa insana de 20% de curtidas. Uma comparação entre **Khaby Lame** e **Kylie Jenner** (ou mesmo **Won Jeong**) mostra que o conteúdo de celebridades realmente faz com que as pessoas engajem, comentem e curtam. Por outro lado, o conteúdo de comédia pode obter uma porcentagem menor (em relação ao conteúdo de celebridades) e ainda assim estar acima da média. A imbatível categoria _animais fofos_ foi incluída em todos os números apresentados anteriormente. Desta vez não foi diferente, pois o usuário com a maior taxa de curtidas é **dmitryhitr**, o que só prova que _animais fofos_ evocam essa resposta empática de todo mundo, independentemente do idioma que falam. Agora vamos verificar se há uma correlação entre a duração do vídeo e a taxa de curtidas.
 
-![gráfico da duração do vídeo dos principais usuários e da taxa de curtidas](./graphs/videolength.png "Duração do vídeo e Engajamento") 
+![gráfico da duração do vídeo dos principais usuários e da taxa de curtidas](./graphs/duraçãoeengajamento.png "Duração do vídeo e Engajamento") 
 
 Nessa figura, o tamanho dos pontos indica a duração do vídeo. Não há uma correlação clara, a única conclusão que podemos tirar é: vídeos curtos são significativamente mais comuns do que os mais longos. E isso se torna factual, especialmente se combinado com esta outra figura:
 
-![gráfico para densidade de comprimento de vídeo de usuários](./graphs/videolengthdensity.png "Densidade do comprimento do vídeo") 
+![gráfico para densidade de comprimento de vídeo de usuários](./graphs/densidadeduraçãovideo.png "Densidade do comprimento do vídeo") 
 
 ### 1.3 O que as pessoas compartilham? 
 
-![gráfico para taxa de compartilhamento de usuários](./graphs/sharerate.png "Taxa de compartilhamento") 
+![gráfico para taxa de compartilhamento de usuários](./graphs/taxacompartilhamento.png "Taxa de compartilhamento") 
 
 A tendência mencionada acima se repete: receitas culinárias, animais fofos e comédia, mas, desta vez, todo o humor de comédia é voltado para um público mais jovem (12 a 16 anos) ou mais velho (mais de 35 anos), pois parte do humor é satírico e parte tem duplo sentido, respectivamente.
 
