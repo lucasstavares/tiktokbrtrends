@@ -1,71 +1,69 @@
+# Resumo
+## Introdução 
+Neste breve projeto, tive a oportunidade de analisar os vídeos mais populares no TikTok brasileiro em maio de 2021. Usei principalmente Python com Numpy para análise estatística e uso otimizado de memória, pois se trata de um grande conjunto de dados com muitas colunas e linhas, Jupyter como opção de notebook, Pandas e Seaborn para visualização limpa de dados.
 
-# Summary
-## Introduction 
-In this short project, I had the opportunity to analyse the trending videos on the Brazilian TikTok in May 2021. I mainly used Python with Numpy for statistical analysis and optimized memory usage as it's a large dataset with many columns and rows, Jupyter as notebook option, Pandas and Seaborn for clean data visualization.
+## Objetivos 
+Trabalhar com um conjunto de dados que se concentra em mídia social (curtidas, comentários, compartilhamentos e reproduções) me levou às seguintes perguntas:
 
-## Goals 
-Working with a dataset that focuses on social media (likes, comments, shares and plays) has led me to the following questions:
+    1. Quais usuários são os mais populares? 
+    2. Quais são as tendências no momento?  
+    3. Há um determinado tamanho de conteúdo que tende a gerar mais engajamento?
+    4. Qual conteúdo tem boa capacidade de compartilhamento?
 
-    1. Which users are the most popular? 
-    2. What's trending right now?  
-    3. Is there a certain length of content that tends to lead to more engagement?
-    4. What content has good shareability?
+Se eu puder responder essas cinco perguntas, insights úteis seriam criados.
 
-If i could answer these five questions, there would be useful insights.
+## Problemas
+Tive alguns problemas com tipos de dados, pois alguns campos que eram números foram reconhecidos como tipos de objetos (strings). Como de costume, havia campos NaN, campos vazios, que foram devidamente limpos e corrigidos antes da análise. 
 
-## Problems
-I had some problems with data types, as some fields that were numbers were recognized as object dtypes (strings). As usual, there were NaN fields, empty fields, which were properly cleaned up and corrected before analysis. 
+## Análise
+### 1. Conclusão 
+Em maio de 2021, todos os principais usuários mais populares tinham conteúdo sobre os seguintes tópicos: reações, muitas vezes misturadas com humor, animais fofos, conteúdo relacionado a alimentos, comédia geral para todas as idades. Todos eles tinham durações de vídeo variadas, mesmo entre usuários que produziam o mesmo tipo de conteúdo, sem correlação direta com o engajamento. O conteúdo negligenciado que tinha bons números em geral (curtidas, compartilhamentos etc.), boa conversão de reproduções em engajamento e uma alta taxa de compartilhamento era de longe: receitas culinárias _e animais fofos, mas esse não é realmente um tipo de conteúdo negligenciado_.
 
-## Analysis
-### 1. Conclusion 
-In May 2021, all top trending users had content on the following topics: reactions, often mixed with humor, cute animals, food-related content, general comedy for all ages. They all had varying video lengths, even among users who produced the same type of content, with no direct correlation to engagement. The overlooked content that had good numbers all around (likes, shares, etc.), good conversion from plays to engagement, and a high share rate were by far the best: cooking recipes _and cute animals, but that's not really an overlooked content type_.
+Muitos dos principais criadores de conteúdo não convertem bem em compartilhamentos porque suas contas são grandes o suficiente para atingir milhões, se não bilhões, de pessoas, o que, por si só, é atraente para os patrocinadores (Khaby Lame, por exemplo). No entanto, se observarmos com atenção, veremos que alguns criadores de conteúdo menores (300 mil a 5 milhões de seguidores) têm taxas de compartilhamento e engajamento impressionantes com o público, o que também pode levar a vendas para patrocinadores e/ou produtos do próprio do criador.
 
-Many of the top content creators don't convert well into shares because their accounts are large enough to reach millions, if not billions, of people, which in itself is attractive to sponsors (Khaby Lame, for example). However, if we look closely, we can see that some smaller content creators (300K - 5M followers) have impressive share rates and engagement with the audience in general, which could lead too, to sales for sponsors and/or products owned by the creator.
+Tangente: A mudança no conteúdo popular de 2021 para 2024 é impressionante. Parece que hoje em dia todo mundo já se deparou com vídeos de tela dividida do Subway Surfer e Minecraft Parkour. Agora, o foco não está apenas no que você está assistindo; ele se estende também ao que você está ouvindo. Isso indica uma inclinação crescente para experiências multissensoriais. O conteúdo padrão perdeu seu apelo e as pessoas estão buscando formas mais envolventes e imersivas de entretenimento que estimulem não apenas visualmente, mas também por meio de experiências de áudio envolventes (Reddit Narration, por exemplo).
+### 1.1 O que as pessoas consomem?
+![gráfico dos usuários mais curtidos](./graphs/mostliked.png "Usuários mais curtidos")
 
-Tangent: The shift in popular content from 2021 to 2024 is striking. It seems like nowdays everyone has already come across Subway Surfer and Minecraft Parkour split-screen videos. Now, the focus isn't just on what you're watching; it extends to what you're listening to as well. It hints at a growing inclination towards multi-sensory experiences. Standard content has lost its appeal and people are looking for more engaging and immersive forms of entertainment that stimulate not only visually but also through engaging audio experiences (Reddit Narration, to name a few).
-### 1.1 What people consume?
-![graph for most liked users](./graphs/mostliked.png "Most liked users")
+Considerando que o número médio de curtidas é de cerca de 400.000, esses são criadores que estão muito acima da média. Podemos ver claramente que o número 1 é **Khaby Lame**, que é famoso por suas reações cômicas, e os outros 2 que vêm em seguida são, respectivamente, conteúdo relacionado a alimentos e _animais fofos_. No entanto, isso não é suficiente para tirar conclusões definitivas sobre o que realmente é tendência. Vamos dar uma olhada em alguns outros números.    
 
-Considering that the average number of likes is around 400,000, these are creators who are way above average. We can clearly see that the number 1 is **Khaby Lame**, who is famous for his comedic reactions, and the other 2 that follow are respectively food-related content and _cute animals_. However, this is not enough to draw any definite conclusions about what is really trending. Let us take a look at some other figures.    
+![gráfico para usuários mais assistidos](./graphs/mostwatched.png "Usuários mais assistidos")
 
-![graph for most watched users](./graphs/mostwatched.png "Most Watched users")
+Está seguindo a tendência: Reações, comida, animais fofos. Vale a pena observar que há algumas exceções aqui. Veja **Kylie Jenner**, que tem um dos maiores números de curtidas, mas um dos menores números de reproduções entre os principais criadores. O mesmo acontece com **Won Jeong** (ox_zung), portanto, é seguro presumir que o conteúdo de celebridades tem mais engajamento do que a maioria dos outros tipos de conteúdo.
 
-Looks like it's following the trend: Reactions, food, cute animals. It's worth noting that there are some outliers here. Look at **Kylie Jenner**, who has one of the highest number of likes but one of the lowest number of plays among the top creators. The same happens with **Won Jeong** (ox_zung),so it's safe to assume that celebrity content has higher engagement than most content types.
+### 1.2 O que as pessoas engajam?
+![gráfico para a proporção de usuários que mais engajam](./graphs/liketoplay.png "Engajamento")
 
-### 1.2 What people engage in?
-![graph for top users like-to-play ratio](./graphs/liketoplay.png "Like-to-Plays")
+Para criar esse número, fiz este cálculo simples (* 100 para obter uma porcentagem):
 
-To build this figure i made this simple calculation (* 100 to get a porcentage):
+![Engajamento](https://latex.codecogs.com/svg.image?%5C;%5Ctext%7BLike-to-Play%20Ratio%7D=%5Cfrac%7B%5Ctext%7BNumber%20of%20Likes%7D%7D%7B%5Ctext%7BNumber%20of%20Plays%7D%7D*100%5C;)
 
-![Like-to-Play Ratio](https://latex.codecogs.com/svg.image?%5C;%5Ctext%7BLike-to-Play%20Ratio%7D=%5Cfrac%7B%5Ctext%7BNumber%20of%20Likes%7D%7D%7B%5Ctext%7BNumber%20of%20Plays%7D%7D*100%5C;)
+Temos uma grande variedade de criadores de conteúdo aqui, e você perceberá que quase nenhum dos criadores com mais curtidas está representado. Isso ocorre porque é difícil para contas realmente grandes obterem uma proporção alta o suficiente, simplesmente porque são grandes. Você não esperaria que uma conta com 100 milhões de seguidores tivesse uma taxa insana de 20% de curtidas. Uma comparação entre **Khaby Lame** e **Kylie Jenner** (ou mesmo **Won Jeong**) mostra que o conteúdo de celebridades realmente faz com que as pessoas engajem, comentem e curtam. Por outro lado, o conteúdo de comédia pode obter uma porcentagem menor (em relação ao conteúdo de celebridades) e ainda assim estar acima da média. A imbatível categoria _animais fofos_ foi incluída em todos os números apresentados anteriormente. Desta vez não foi diferente, pois o usuário com a maior taxa de curtidas é **dmitryhitr**, o que só prova que _animais fofos_ evocam essa resposta empática de todo mundo, independentemente do idioma que falam. Agora vamos verificar se há uma correlação entre a duração do vídeo e a taxa de curtidas.
 
-We have a wide range of content creators here, and you'll notice that almost none of the creaters with the most likes are represented. That's because it's hard for really big accounts to get a high enough ratio, simply because they're big. You wouldn't expect an account with 100 million followers to have an insane like-to-play ratio of 20%. A comparison between **Khaby Lame** and **Kylie Jenner** (or even **Won Jeong**) shows that celebrity content really does get people to engage with it. On the other hand, comedy content can get a lower percentage (relative to celebrity content) and still be above average. The unbeaten _cute animals_ category was included in all the figures presented. This time was no different, as the user with the highest like-to-play ratio is **dmitryhitr**, which only proves that _cute animals_ evoke that empathetic response from everyone, regardless of the language they speak. Now let's look at whether there is a correlation between the length of the video and the like-to-play rate.
+![gráfico da duração do vídeo dos principais usuários e da taxa de curtidas](./graphs/videolength.png "Duração do vídeo e Engajamento") 
 
-![graph for top users video length and like-to-play ratio](./graphs/videolength.png "Video Lenght and Like-to-Play") 
+Nessa figura, o tamanho dos pontos indica a duração do vídeo. Não há uma correlação clara, a única conclusão que podemos tirar é: vídeos curtos são significativamente mais comuns do que os mais longos. E isso se torna factual, especialmente se combinado com esta outra figura:
 
-In this figure, the size of the dots indicates how long the video is. There is no clear correlation, the only conclusion we can make is: short videos are significantly more common than longer ones. And this is true, especially if paired with this other figure:
+![gráfico para densidade de comprimento de vídeo de usuários](./graphs/videolengthdensity.png "Densidade do comprimento do vídeo") 
 
-![graph for users video length density](./graphs/videolengthdensity.png "Video Lenght Density") 
+### 1.3 O que as pessoas compartilham? 
 
-### 1.3 What people share? 
+![gráfico para taxa de compartilhamento de usuários](./graphs/sharerate.png "Taxa de compartilhamento") 
 
-![graph for users share rate](./graphs/sharerate.png "Share Rate") 
+A tendência mencionada acima se repete: receitas culinárias, animais fofos e comédia, mas, desta vez, todo o humor de comédia é voltado para um público mais jovem (12 a 16 anos) ou mais velho (mais de 35 anos), pois parte do humor é satírico e parte tem duplo sentido, respectivamente.
 
-The aforementioned trend repeats itself, Cooking recipes, cute animals and comedy, but this time all the comedy humor is aimed at either a younger (12 - 16 years) or older audience (35+ years), as some of the humor is satirical and some has more double-meaning, respectively.
+## Apêndice
 
-## Appendix
-
-During this analysis, I had to look up each tiktoker in order to create a better, more descriptive analysis. This could have been solved with an ML classification model to describe the content type, but the dataset itself would not support this as there was not much else besides the information used.
+Durante essa análise, tive que ver o perfil de cada Tiktoker para criar uma análise melhor e mais descritiva. Isso poderia ter sido resolvido com um modelo de classificação de ML para descrever o tipo de conteúdo, mas o conjunto de dados em si não daria suporte a isso, pois não havia muito mais além das informações usadas.
 
 
-## Authors
+## Autores
 Lucas Tavares
 - [Linkedin](https://www.linkedin.com/in/lucas-tavares-4a40851b1/)
 
 
-## References
+## Referências
 
  - [Brazillian Tiktok Trending Videos](https://www.kaggle.com/datasets/ilanbrik/brazilian-tiktok-trending-videos)
- - [Ilan Brik Analysis](https://www.kaggle.com/code/ilanbrik/tiktok-trends-in-brazil)
-
+ - [Análise de Ilan Brik](https://www.kaggle.com/code/ilanbrik/tiktok-trends-in-brazil)
 
