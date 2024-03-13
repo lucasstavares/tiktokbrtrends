@@ -37,7 +37,7 @@ Está seguindo a tendência: Reações, comida, animais fofos. Vale a pena obser
 
 Para criar esse número, fiz este cálculo simples (* 100 para obter uma porcentagem):
 
-![Engajamento](https://latex.codecogs.com/svg.image?%5C;%5Ctext%7BLike-to-Play%20Ratio%7D=%5Cfrac%7B%5Ctext%7BNumber%20of%20Likes%7D%7D%7B%5Ctext%7BNumber%20of%20Plays%7D%7D*100%5C;)
+![Engajamento](https://latex.codecogs.com/svg.image?Engajamento=\frac{Curtidas}{Reproducoes}*100)
 
 Temos uma grande variedade de criadores de conteúdo aqui, e você perceberá que quase nenhum dos criadores com mais curtidas está representado. Isso ocorre porque é difícil para contas realmente grandes obterem uma proporção alta o suficiente, simplesmente porque são grandes. Você não esperaria que uma conta com 100 milhões de seguidores tivesse uma taxa insana de 20% de curtidas. Uma comparação entre **Khaby Lame** e **Kylie Jenner** (ou mesmo **Won Jeong**) mostra que o conteúdo de celebridades realmente faz com que as pessoas engajem, comentem e curtam. Por outro lado, o conteúdo de comédia pode obter uma porcentagem menor (em relação ao conteúdo de celebridades) e ainda assim estar acima da média. A imbatível categoria _animais fofos_ foi incluída em todos os números apresentados anteriormente. Desta vez não foi diferente, pois o usuário com a maior taxa de curtidas é **dmitryhitr**, o que só prova que _animais fofos_ evocam essa resposta empática de todo mundo, independentemente do idioma que falam. Agora vamos verificar se há uma correlação entre a duração do vídeo e a taxa de curtidas.
 
