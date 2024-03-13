@@ -1,4 +1,4 @@
-[![pt-br](https://img.shields.io/badge/lang-pt-br-green)](https://github.com/lucasstavares/tiktokbrtrends/blob/main/README.md)
+[![pt-br](https://img.shields.io/badge/lang-pt_br-green)](https://github.com/lucasstavares/tiktokbrtrends/blob/main/README.md)
 # Summary
 ## Introduction 
 In this short project, I had the opportunity to analyse the trending videos on the Brazilian TikTok in May 2021. I mainly used Python with Numpy for statistical analysis and optimized memory usage as it's a large dataset with many columns and rows, Jupyter as notebook option, Pandas and Seaborn for clean data visualization.
