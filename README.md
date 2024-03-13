@@ -1,3 +1,4 @@
+![Static Badge](https://img.shields.io/badge/lang-en-red)(https://github.com/lucasstavares/tiktokbrtrends/blob/main/README.en.md)
 # Resumo
 ## Introdução 
 Neste breve projeto, tive a oportunidade de analisar os vídeos mais populares no TikTok brasileiro em maio de 2021. Usei principalmente Python com Numpy para análise estatística e uso otimizado de memória, pois se trata de um grande conjunto de dados com muitas colunas e linhas, Jupyter como opção de notebook, Pandas e Seaborn para visualização limpa de dados.
